@@ -1,0 +1,78 @@
+
+.container-backoffice {
+    position: absolute;
+    overflow: hidden;
+    height: calc(100vh - var(--navbar-height));
+    display: flex;
+    top:var(--navbar-height);
+    width: 100%;
+    
+}
+
+.menu-backoffice {
+    width: 20%;
+}
+
+.activef{
+    background-color: var(--orange-yellow-color) !important;
+} 
+
+
+.div-boutons-backoffice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.boutons-backoffice {
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    height: 40px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --navbar-color);
+ color: white;
+}
+
+.boutons-backoffice:hover {
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 80%;
+    text-align: center;
+    background-color: var( --orange-yellow-color);
+
+}
+
+.bouton-deconnexion-backoffice:hover {
+    background-color: var( --orange-yellow-color);
+}
+
+.boutons-backoffice:active {
+    background-color: var( --orange-yellow-color);
+}
+
+
+.zone-backoffice {
+    width:80%;
+    height: calc(100vh - var(--navbar-height));
+    padding: 50px;
+
+}
+.show-ressources-backoffice{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+

@@ -1,0 +1,32 @@
+.searchbar {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-around; 
+    color: #EDBD6A;
+    margin-top: 15px;
+    font-weight: 600;
+    margin-top: 80px;
+  }
+ 
+  .searchbar-content {
+    padding: 10px;
+  }
+  .searchbar label{
+    margin: 5px;
+  }
+
+  .searchbar input {
+    border: solid 1.5px var(--orange-yellow-color); /* Supprimer la bordure */
+    padding: 5px; /* Ajouter du padding */
+    border-radius: 25px; /* Ajouter un border radius */
+    text-align: center;
+    color: var(--orange-yellow-color);
+    font-weight: 600;
+  }
+
+  .searchbar input::placeholder {
+    color: var(--orange-yellow-color);
+  }
+
+
+  

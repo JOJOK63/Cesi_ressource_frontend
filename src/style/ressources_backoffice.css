@@ -1,0 +1,54 @@
+/* CSS pour l'entête */
+.card-ressource-backoffice.card-ressource-backoffice-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Répartition égale des colonnes */
+  gap: 10px; /* Espacement entre les colonnes */
+  padding: 10px;
+  align-items: center; /* Centrage vertical des éléments */
+}
+
+.card-ressource-backoffice.card-ressource-backoffice-header > div {
+  text-align: center; /* Centrage horizontal du contenu */
+}
+
+/* CSS pour les cartes */
+.card-ressource-backoffice {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Colonnes de largeur égale */
+  gap: 10px; /* Espacement entre les colonnes */
+  padding: 10px;
+  align-items: center; /* Centrage vertical des éléments */
+}
+
+.card-ressource-backoffice-row{
+  background-color: white;
+}
+.card-ressource-backoffice > div {
+  text-align: center; /* Centrage horizontal du contenu */
+}
+
+
+.card-ressource-backoffice-header div{
+  text-transform: uppercase;
+  border: 1px solid var(--orange-yellow-color);
+  background-color: var(--orange-yellow-color);
+  padding: 10px;
+  color:white;
+  border-radius: 25px;
+}
+
+.card-ressource-action-backoffice-show{
+  border: 1px solid var(--orange-yellow-color);
+  border-radius: 25px;
+  color: var(--navbar-color );
+}
+
+.card-ressource-action-backoffice-show select,button{
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: 1px solid var(--orange-yellow-color);
+  background-color: white;
+  color: var(--navbar-color);
+  letter-spacing: 1px;
+}

@@ -1,0 +1,198 @@
+.show-ressources{
+    padding: 10px 0;
+}
+
+.card-ressource{
+    background-color: white;
+    box-shadow: var(--navbar-color) 0 0 8px 1px;
+    width: 80%;
+    height: 420px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    color:var(--navbar-color);
+}
+
+
+.card-ressource-informations{
+ margin: auto;
+ text-align: center;
+ height: 340px;
+}
+
+.card-ressource-informations-div-img{
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px; 
+}
+
+.card-ressource-informations img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center; 
+}
+.card-ressource-informations h2 {
+    padding: 5px 0;
+    white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+    overflow: hidden; /* Masquer le contenu dépassant */
+    text-overflow: ellipsis; /* Ajouter des points de suspension pour le texte dépassant */
+    max-height: 50px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+  
+
+.card-ressource-informations p{
+    padding: 10px;
+     /* Taille maximale du paragraphe */
+    max-height: 100px;
+    white-space: wrap;
+    overflow-x: hidden;
+    scrollbar-width: thin; 
+    /* scrollbar-width: none;  */
+
+}
+.card-ressource-informations p:hover{
+  
+}
+.card-ressource-action{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+  
+}
+.card-ressource-metadata{
+    
+}
+
+.card-ressource-metadata div{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+.card-ressource-action button{
+    width: 80px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: var( --orange-yellow-color );
+    color: white;
+    cursor: pointer;
+    z-index: 5;
+} 
+
+.add-ressource-icon{
+  position: fixed;
+  top: 88vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+}
+
+  /* Media query pour les tablettes */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .show-ressources{
+
+    }
+    
+    .card-ressource{
+  
+    }
+    
+    
+    .card-ressource-informations{
+
+    }
+    
+    .card-ressource-informations-div-img{
+
+    }
+    
+    .card-ressource-informations img{
+  
+    }
+    .card-ressource-informations h2 {
+  
+      }
+      
+      .card-ressource-informations h2:hover {
+  
+      }
+    .card-ressource-informations p{
+
+    }
+    .card-ressource-informations p:hover{
+      
+    }
+    .card-ressource-action{
+   
+    }
+    .card-ressource-metadata{
+        
+    }
+    
+    .card-ressource-metadata div{
+       
+    }
+    
+    
+    .card-ressource-action button{
+
+    }
+  }
+  
+  /* Media query pour les ordinateurs de bureau */
+  /* Media query pour les tablettes */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .show-ressources {
+      display: flex;
+      flex-wrap: wrap; /* Permettre le retour à la ligne des cartes */
+      justify-content: space-between; /* Aligner les cartes en les espaçant */
+    }
+  
+    .card-ressource {
+      width: calc(30% - 20px); /* Ajuster la largeur pour deux cartes par ligne */
+      margin-bottom: 20px; /* Espacement entre les lignes de cartes */
+    }
+  }
+  
+  /* Media query pour les ordinateurs de bureau */
+  @media only screen and (min-width: 1025px) {
+    .show-ressources {
+      display: flex;
+      width: 90%;
+      flex-wrap: wrap; /* Permettre le retour à la ligne des cartes */
+      justify-content: space-between; 
+      margin: auto;
+      gap:10px;
+    }
+  
+    .card-ressource {
+      width: 20%; /* Ajuster la largeur pour trois cartes par ligne */
+    }
+
+    .add-ressource-icon{
+      position: sticky;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      border: none;
+    }
+  }
+  
+  
+  
